@@ -10,6 +10,9 @@ jobs:
       - run: sudo apt install -y --no-install-recommends iverilog
       - run: pip3 install cocotb
       - run: make -C tests
+          contents: read
+          checks: write
+          id-token: write
       - uses: actions/upload-artifact@v3
         with:
           name: waveform
@@ -19,3 +22,4 @@ jobs:
         if: always() # always run even if the previous step fails
         with:
           report_paths: '**/tests/results.xml'
+          
