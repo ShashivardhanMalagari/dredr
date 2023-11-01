@@ -1,3 +1,6 @@
+contents: read
+checks: write
+id-token: write
 name: learn-github-actions
 run-name: ${{ github.actor }} Regression
 on: [push]
