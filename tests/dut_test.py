@@ -2,7 +2,6 @@ import cocotb
 from cocotb.triggers import Timer, RisingEdge
 from cocotb.clock import Clock
 
-
 async def reset_seq(dut):
     dut.RST_N.value = 1
     await Timer(1, "ns")
