@@ -1,4 +1,4 @@
-module exam_test(input  CLK,
+module exam_test(input wire CLK,
   input wire RST_N,
 
   // action method start
